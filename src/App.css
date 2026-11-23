@@ -20,23 +20,7 @@ button { cursor: pointer; }
 }
 
 .site-header { grid-area: header; }
-
-
-.sidebar {
-  grid-area: sidebar;
-  background: #e4edf7;
-  padding: 24px 16px;
-}
-.sidebar h2 { margin-top: 0; font-size: 1.1rem; }
-.sidebar nav { display: flex; flex-direction: column; gap: 10px; }
-.sidebar a {
-  display: block;
-  padding: 11px 12px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #173f72;
-}
-.sidebar a:hover { background: #c9dcf1; }
+.site-sidebar { grid-area: sidebar; }
 
 .content {
   grid-area: main;
@@ -123,10 +107,10 @@ button:hover { background: #124c7c; }
       "main"
       "footer";
   }
-  .sidebar { padding: 12px 16px; }
-  .sidebar h2 { display: none; }
-  .sidebar nav { flex-direction: row; flex-wrap: wrap; }
-  .sidebar a { padding: 8px 10px; }
+  .site-sidebar { padding: 12px 16px; }
+  .site-sidebar h2 { display: none; }
+  .site-sidebar nav { flex-direction: row; flex-wrap: wrap; }
+  .site-sidebar .nav-link { padding: 8px 10px; }
   .content { padding: 16px; }
   .course-grid { grid-template-columns: 1fr; }
   .section-heading { align-items: flex-start; flex-direction: column; }

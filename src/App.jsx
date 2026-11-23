@@ -1,13 +1,17 @@
 import './App.css'
-import Header from './component/Header'   
+import Header from './component/Header'
 import Footer from './component/Footer'
-
+import Sidebar from './component/Sidebar'
 const courses = [
   { id: 1, code: 'CCE401', name: 'Client-Side Development', students: 28 },
   { id: 2, code: 'CCE402', name: 'Computer Networks', students: 32 },
   { id: 3, code: 'CCE403', name: 'Database Systems', students: 25 },
 ]
-
+const navigation = [
+  { id: 'overview', label: 'Overview', href: '#overview' },
+  { id: 'courses', label: 'Courses', href: '#courses' },
+  { id: 'announcements', label: 'Announcements', href: '#announcements' },
+]
 function App() {
   return (
     <div className="dashboard">
@@ -17,14 +21,7 @@ function App() {
         instructor="CCE Department"
       />
 
-      <aside className="sidebar">
-        <h2>Navigation</h2>
-        <nav>
-          <a href="#overview">Overview</a>
-          <a href="#courses">Courses</a>
-          <a href="#announcements">Announcements</a>
-        </nav>
-      </aside>
+      <Sidebar items={navigation} selectedPage="overview" />
 
       <main className="content" id="overview">
         <h2>Dashboard</h2>

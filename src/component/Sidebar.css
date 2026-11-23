@@ -1,0 +1,6 @@
+.site-sidebar { background: #e4edf7; padding: 24px 16px; }
+.site-sidebar h2 { margin-top: 0; font-size: 1.1rem; }
+.site-sidebar nav { display: flex; flex-direction: column; gap: 10px; }
+.nav-link { display: block; padding: 11px 12px; border-radius: 8px; color: #173f72; text-decoration: none; }
+.nav-link:hover { background: #c9dcf1; }
+.nav-link.active { background: #173f72; color: white; }
