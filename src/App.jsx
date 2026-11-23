@@ -1,5 +1,6 @@
 import './App.css'
-import Header from './component/Header'   // ⬅️ جبنا الـHeader
+import Header from './component/Header'   
+import Footer from './component/Footer'
 
 const courses = [
   { id: 1, code: 'CCE401', name: 'Client-Side Development', students: 28 },
@@ -10,8 +11,6 @@ const courses = [
 function App() {
   return (
     <div className="dashboard">
-
-      {/* ⬅️ بدل <header className="topbar">...</header> */}
       <Header
         title="IUL Portal"
         semester="Fall 2026"
@@ -70,7 +69,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="footer">IUL • CCE Client-Side Development</footer>
+      <Footer university="IUL" year={2026} />
     </div>
   )
 }
