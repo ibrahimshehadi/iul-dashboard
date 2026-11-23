@@ -1,0 +1,13 @@
+.site-sidebar {
+  background: #e4edf7;
+  padding: 20px;
+}
+.site-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.site-sidebar a {
+  color: #173f72;
+  text-decoration: none;
+}
