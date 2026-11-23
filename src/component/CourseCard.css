@@ -1,0 +1,11 @@
+.course-card {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #d7e1ed;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 3px 12px rgba(17, 49, 78, .07);
+}
+.course-card h3 { margin: 12px 0; }
+.course-card p { color: #526578; }
+.course-code { font-size: .85rem; color: #1c67a6; font-weight: bold; }

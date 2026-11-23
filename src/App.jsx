@@ -3,6 +3,7 @@ import Header from './component/Header'
 import Footer from './component/Footer'
 import Sidebar from './component/Sidebar'
 import StatCard from './component/StatCard'
+import CourseCard from './component/CourseCard'
 const courses = [
   { id: 1, code: 'CCE401', name: 'Client-Side Development', students: 28 },
   { id: 2, code: 'CCE402', name: 'Computer Networks', students: 32 },
@@ -14,6 +15,10 @@ const navigation = [
   { id: 'announcements', label: 'Announcements', href: '#announcements' },
 ]
 function App() {
+  function handleCourseSelect(course) {
+    alert(`Selected: ${course.code} - ${course.name}`)
+  }
+
   return (
     <div className="dashboard">
       <Header
@@ -42,12 +47,11 @@ function App() {
 
           <div className="course-grid">
             {courses.map((course) => (
-              <article className="course-card" key={course.id}>
-                <span className="course-code">{course.code}</span>
-                <h3>{course.name}</h3>
-                <p>{course.students} students enrolled</p>
-                <button type="button">View Course</button>
-              </article>
+              <CourseCard
+                key={course.id}
+                course={course}
+                onSelect={handleCourseSelect}
+              />
             ))}
           </div>
         </section>
