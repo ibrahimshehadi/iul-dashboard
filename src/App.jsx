@@ -2,6 +2,7 @@ import './App.css'
 import Header from './component/Header'
 import Footer from './component/Footer'
 import Sidebar from './component/Sidebar'
+import StatCard from './component/StatCard'
 const courses = [
   { id: 1, code: 'CCE401', name: 'Client-Side Development', students: 28 },
   { id: 2, code: 'CCE402', name: 'Computer Networks', students: 32 },
@@ -28,18 +29,9 @@ function App() {
         <p>Welcome to your academic workspace.</p>
 
         <section className="stats" aria-label="Summary">
-          <article className="stat-card">
-            <h3>Courses</h3>
-            <strong>3</strong>
-          </article>
-          <article className="stat-card">
-            <h3>Students</h3>
-            <strong>85</strong>
-          </article>
-          <article className="stat-card">
-            <h3>Assignments</h3>
-            <strong>12</strong>
-          </article>
+          <StatCard label="Courses" value={courses.length} />
+          <StatCard label="Students" value={85} />
+          <StatCard label="Assignments" value={12} unit="pending" />
         </section>
 
         <section id="courses" className="course-section">

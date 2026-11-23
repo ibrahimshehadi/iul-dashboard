@@ -37,15 +37,6 @@ button { cursor: pointer; }
   gap: 16px;
   margin: 24px 0 32px;
 }
-.stat-card {
-  flex: 1 1 180px;
-  padding: 20px;
-  border: 1px solid #d7e1ed;
-  border-radius: 12px;
-  background: white;
-}
-.stat-card h3 { margin: 0 0 10px; font-size: 1rem; }
-.stat-card strong { font-size: 2rem; color: #1c67a6; }
 
 .section-heading {
   display: flex;

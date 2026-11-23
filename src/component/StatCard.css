@@ -1,0 +1,10 @@
+.stat-card {
+  flex: 1 1 180px;
+  padding: 20px;
+  border: 1px solid #d7e1ed;
+  border-radius: 12px;
+  background: white;
+}
+.stat-card h3 { margin: 0 0 10px; font-size: 1rem; }
+.stat-card strong { font-size: 2rem; color: #1c67a6; }
+.stat-unit { font-size: 1rem; color: #526578; font-weight: normal; }
